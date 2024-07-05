@@ -1,0 +1,165 @@
+content.bundle.js:54965 will try to open idb now: content
+20:27:33.725 o5com.js:204 ---<<<  инициализировано ядро       360 ms        o5com
+20:27:51.850 IniScripts.js:64 ---<<<             инициирован        2 ms        o5inc
+20:27:51.853 
+
+`
+p>ul{
+	font-size: 2.5em;
+}
+
+после "Красным цветом"    давать арабские увеличенным
+
+з--------------------------------------------------------
+
+
+решить, что делать с исправлениям <b>گ</b>  	gefв оцифровках
+
+не вставляет среднюю картинку в первоисточникх
+
+Вместо терминов суффик-аффикс имспользовать свойтво-признак
+
+исправить 'правильно' на '<i>правильно</i>'
+
+разница между <b>ك</b> - деепричастие и <b>ق</b> - который
+
+позаменять <b>ة</b> на "бесточечное" но с полу-пробелом
+
+
+https://www.lexilogos.com/keyboard/arabic.htm
+https://www.isa-sari.com/osmanlica/
+https://bilgibilimi.net/osmanli-turkcesi-sozluk/
+
+Проверить правильность подстановки كگڭ из словарей и в моих текстах. Причем промерить таже коды!
+
+<b>سكا</b> = сеКа	<b>ك</b>	kef
+<b>سگا</b> = саГа	<b>گ</b>	gef
+<b>سڭا</b> = саНга	<b>ڭ</b>	nef
+
+все проблемы в букве <b o5popup="https://ru.frwiki.wiki/wiki/%DA%AD">ڭ</b>	nef, отсутствующей в и в арабском, и в (современном) персидском языках.
+
+В Интернете часто встречаются ошибочные написания (трансляции) этих букв. Вот, наример, 
+интерпретация Гугд-траслятором  трёх отдельных букв и трёх слов содержацих эти буквы (в той же очерёдности)
+file:///home/leon/moe/www/tr/blog/pics/ошибки_букв_араб.png
+
+Да, в арабском алфавите две из них отсутствуют, но почему они по-разному интерпретируются отдельно и внутри слова?
+
+Ну а вот в персидском алфавите имеются две из них. Однако Гугл и для него ошибочно даёт одинаковое название отдельных букв
+file:///home/leon/moe/www/tr/blog/pics/ошибки_букв_перс.png
+
+
+почитать:
+https://turkrut.ru/uroki-turetskogo-yazyka/urok-27-affiks-ca-ce-ca-ce.html
+https://www.tomer.ru/blog/grammatika/434-volshebstvo-slovoobrazovaniya-s-pomoshchyu-affiksov.html
+
+
+
+// почему в snd1_ .html window.olga5[0] такой странный значение у consts// 
+
+
+добавлять async 
+(и написать про это!)
+
+в shp cart не плюхается на shdw
+
+не загрузились иконки в http://localhost/o5/olga5-tests/all4.html
+
+найти "контрастній" Текст
+расцветить сообщени об инициализации o5inc (через общий модуль,)
+
+
+сначала делать общую инициализацию, а потом уже и т.д.
+
+	if (window.olga5) {
+		alert(`Невозмоожно использование библиотеки. Имя 'olga5' - занято!`)
+		return
+	}
+	window.olga5 = []
+	window.olga5.C = {
+		C.MakeObjName = ...
+		C.consts = 
+		Object.assign(C.consts, {o5debug: ....})
+		сюда - всё, что нужно заранее
+	}
+	window.olga5.E = {
+		Err:err=>{
+			console.error    с сцетной раскраской !
+				(`${txt} '${eve}' для тега ${window.olga5.C.MakeObjName(tag)} и ${add}`)
+		},
+		IsEve:(event, tag, eve)=> event.tag === tag && event.eve == eve,без учета регистра!
+		events :[],
+		donets :[],
+		AddEventListener : (tag, eve, Fun)=>{
+			const E=window.olga5.E,
+				events = E.events
+			for (const event of events)
+				if (E.IsEve(event, tag, eve) && event.Fun==Fun){   
+					window.olga5.E.Err(`повторная регистрация события`, eve,tag, `функции ${Fun}`)
+					return
+				}
+			events.push({tag:tag, eve: eve, Fun:Fun})
+
+			const donets = window.olga5.E.donets
+			for (const donet of donets)
+				if (E.IsEve(donet, tag, eve) ){
+					if (!donet.done){
+						donet.done = true
+						const e= new Event 
+						Object.assign(e, {type:eve.toLowerCase(), 
+							target:tag, 
+							srcElement:tag, 
+							currentTarget:tag, 
+							timestamp:Number(new Date),
+							detail: { modul: modul }
+						})
+						Fun({e})
+					}
+					else
+						tag.addEventListener(eve, Fun)		чет тут непонятно!!
+				}
+		},
+
+		RemoveEventListener : (tag, eve, Fun)=>{
+			const E=window.olga5.E,
+				events = E.events
+			let i = events.length
+			while (i-- > 0){
+				const event= events[i]
+				if (E.IsEve(event, tag, eve) && event.Fun==Fun){   
+					events.splice(i,1)
+					return
+				}}
+			window.olga5.E.Err(`удаление неприсвоенного события`, eve, tag, `функции ${Fun}`)			
+		},
+
+		DispatchEvent : (tag, e)=>{
+			donets.push({tag:tag, eve: eve, modul:modul, done:false})	
+				if (donet.tag === tag && donet.eve == e.type && donet.detail == e.detail){   без учета регистра!
+					window.olga5.E.Err(`повторная генерация события`, donet.eve,donet.tag, `detail= ${donet.detail}`)
+					continue
+				}	 
+			donet.push({tag : tag, eve: e.type, detail: e.detail})
+			tag.dispatchEvent(e)
+		},
+	}
+
+
+
+почему-то подхватывает olga5_shp_:Up:Top (с лишним символом)
+
+разобраться с заголовком и где вешать копирайт
+
+проверить написание 'N' и долгие 'a'
+
+у них есть ايت и есть ات ?
+
+проверить انوب или  پانوپ
+ب ب پ پ
+
+پ
+$ sudo /etc/init.d/apache2 restart
+Restarting Apache httpd web server: apache2.
+leon@main-MX:~
+
+
+, кстати, по-русски буква так и называется 'эн';

@@ -1,0 +1,35 @@
+линки.txt
+
+Как правильно вставить символ копирайта?
+https://impuls-web.ru/kak-pravilno-vstavit-simvol-kopirajta/
+
+
+вертикальное выравнивание
+https://habr.com/en/companies/netcracker/articles/277433/
+
+2. Вход на "менеджер сайтов"
+https://sofi.hosting.energy:1500/ispmgr
+184274.romleon
+rsOF7d6RxJFC
+
+3. Вход на "оплату услуг"
+https://my.hosting.energy
+romleon@gmail.com
+Dtheymrf1
+
+Подключение по SSH из Linux’а
+ssh 184274.romleon@145.239.238.130
+
+Что такое черный список URL-адресов Google
+https://timeweb.com/ru/community/articles/chto-takoe-chernyy-spisok-url-adresov-google
+
+
+    https://habr.com/ru/companies/2gis/articles/358148/
+    <br />
+    https://myarabickeyboard.org/
+    <br />
+    https://rombase.ru/
+    <br />
+    https://mastergipsokartona.ru/
+    <br /> вертикальное выравнивание
+    https://habr.com/en/companies/netcracker/articles/277433/

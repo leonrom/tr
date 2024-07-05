@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Table with Fixed Header</title>
+    <style>
+        .table-container {
+            width: 100%;
+            height: 50vh;
+            overflow-x: auto;
+            /* Добавляем горизонтальную прокрутку при необходимости */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        thead {
+            background-color: #f2f2f2;
+            position: sticky;
+            /* Фиксируем заголовок */
+            top: 0;
+            z-index: 1;
+            /* Для поднятия над содержимым */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Заголовок 1</th>
+                    <th>Заголовок 2</th>
+                    <th>Заголовок 3</th>
+                    <!-- Добавьте столько заголовков, сколько вам нужно -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Примеры строк данных -->
+                <tr>
+                    <td>Ячейка 1-1</td>
+                    <td>Ячейка 1-2</td>
+                    <td>Ячейка 1-3</td>
+                </tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <tr><td>Ячейка 2-1</td><td>Ячейка 2-2</td><td>Ячейка 2-3</td></tr>
+                <!-- Добавьте сколько угодно строк -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

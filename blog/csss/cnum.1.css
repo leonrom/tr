@@ -1,0 +1,373 @@
+/*
+em - от текущего шоифта
+% - от родительской ширины
+rem - от стиля html
+vw – 1% ширины окна
+vh – 1% высоты окна
+vmin – наименьшее из (vw, vh), в IE9 обозначается vm
+vmax – наибольшее из (vw, vh)
+*/
+
+.ardava,
+.artab {
+	border: 1px solid black;
+	border-collapse: collapse;
+	table-layout: fixed;
+	direction: ltr;
+	display: flow;
+	width: max-content;
+
+	border-top: none;
+	border-right: none;
+
+    float: left;
+}
+
+pre.artab {
+	opacity: 1;
+}
+
+.artab.add {
+	margin-left: 10%;
+}
+
+.artab th[issort] {
+	cursor: pointer;
+	background-color: greenyellow;
+}
+
+.artab th[issort]::after {
+	content: '⇅';
+	background-color: yellow;
+}
+
+.artab th[issort].o5tab-sortDn,
+.artab th[issort].o5tab-sortUp {
+	background-color: yellow;
+}
+
+.artab th[issort].o5tab-sortDn::after {
+	content: '⬆';
+}
+
+.artab th[issort].o5tab-sortUp::after {
+	content: '⬇';
+}
+
+.ardava thead tr,
+.artab thead tr,
+.artab tfoot tr {
+	line-height: 100%;
+	background-color: lightgreen;
+	font-size: x-small;
+	font-weight: normal;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.artab tbody tr {
+	background-color: blanchedalmond;
+	line-height: 1.95vw;
+}
+
+.artab.add tbody tr {
+	line-height: 1.6vw;
+}
+
+.artab tbody tr.o5tab-odd {
+	background-color: azure;
+}
+
+.ardava tr,
+.artab tr {
+	border-top: 1px solid lightgray;
+}
+
+.ardava tr.o5tab-span,
+.artab tr.o5tab-span {
+	border-top: 1px dashed lightcoral;
+}
+
+.ardava th,
+.ardava td,
+.artab th,
+.artab td {
+	border-right: 1px solid gray;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+.artab td {
+	white-space: break-spaces;
+	padding-left: 0.2em;
+	padding-right: 0.3em;
+}
+
+.artab td:has(sub) {
+	line-height: 1.5vw;
+}
+
+.artab b {
+	direction: rtl;
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+.artab td i {
+	margin-left: 0.6vw;
+}
+
+.artab tr td:nth-child(1),
+.artab tr td:nth-child(2) {
+	font-family: 'Courier New', Courier, monospace;
+	direction: ltr;
+	font-weight: normal;
+	font-size: 1.4vw;
+	text-align: end;
+	text-align: right;
+}
+
+.artab tr td:nth-child(2) {
+	font-size: 1.6vwn;
+}
+
+.artab.osman tr th:nth-child(2),
+.artab.osman tr td:nth-child(2),
+/*  */
+.artab tr th:nth-child(3),
+.artab tr th:nth-child(4),
+.artab tr th:nth-child(5),
+.artab tr th:nth-child(6),
+/*  */
+.artab tr td:nth-child(3),
+.artab tr td:nth-child(4),
+.artab tr td:nth-child(5),
+.artab tr td:nth-child(6) {
+	display: none;
+	width: 0;
+}
+
+.artab tr td:nth-child(7) {
+	direction: rtl;
+	font-weight: bold;
+	font-size: 1.9vw;
+	text-align: center;
+}
+
+.artab tr td:nth-child(8),
+.artab tr td:nth-child(10),
+.artab tr td:nth-child(11),
+.artab tr td:nth-child(12),
+.artab tr td:nth-child(15) {
+	direction: rtl;
+	font-size: 1.9vw;
+}
+
+.artab tr td:nth-child(9),
+.artab tr td:nth-child(13),
+.artab tr td:nth-child(14) {
+	direction: ltr;
+	font-size: 1.9vw;
+}
+
+.artab tr td:nth-child(13),
+.artab tr td:nth-child(14) {
+	text-align: center;
+}
+
+/* .artab tr td:nth-child(9) {
+	font-family: 'Times New Roman', Times, serif;
+	font-style: italic;
+} */
+
+.ardava tr th,
+.ardava tr td,
+.artab.add tr th,
+.artab.add tr td,
+.artab.alf tr th,
+.artab.alf tr td {
+	display: table-cell;
+	min-width: 3vw;
+	width: auto;
+}
+
+.ardava tr th,
+.ardava tr td {
+	padding-left: 0.3em;
+	padding-right: 0.2em;
+}
+
+.artab.alf {
+	margin-left: 2em;
+}
+
+.ardava tr,
+.artab.alf tr {
+	line-height: 1.5em;
+}
+
+.ardava tr td {
+	text-align: left;
+	font-weight: normal;
+	font-size: 1.8vw;
+}
+
+.artab.alf tr td {
+	text-align: center;
+	font-weight: normal;
+	font-size: 1.8vw;
+}
+
+.artab.alf tr td:nth-child(1) {
+	font-size: 1vw;
+}
+
+.artab.alf tr td:nth-child(2) {
+	font-size: 2.2vw;
+	/* font-weight: bold; */
+}
+
+.artab.alf tr td:nth-child(3) {
+	font-size: 1.5vw;
+}
+
+.ardava tr td:nth-child(1) {
+	font-size: 1vw;
+	text-align: center;
+}
+
+.ardava tr td:nth-child(5) {
+	font-size: 1.98vw;
+	text-align: center;
+}
+
+.ardava tr td:nth-child(2),
+.ardava tr td:nth-child(3),
+.ardava tr td:nth-child(5) {
+	border-right: 1px solid aqua;
+}
+
+.artab.add tr td {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.4vw;
+	font-weight: normal;
+	padding-bottom: 0.2em;
+	padding-top: 0.2em;
+	direction: ltr;
+}
+
+.artab.add tr td i {
+	font-size: 1.3vw;
+}
+
+.artab.add tr td:nth-child(1) {
+	text-align: center;
+	font-size: 1vw;
+}
+
+.artab.add tr td:nth-child(2) {
+	font-size: 2.2vw;
+	text-align: center;
+	direction: rtl;
+}
+
+.ardava-div,
+.artab-div {
+	max-height: 60vh;
+	direction: rtl;
+	width: 100%;
+	padding-left: 1vw;
+	margin-left: 1.3vw;
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+	border-bottom: 1px solid gray;
+	border-top: 1px solid black;
+	border-left: 1px solid lightgray;
+}
+
+.artab-div {
+	overflow-y: scroll;
+	overflow-x: auto;
+}
+
+.ardava-div {
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding-left: 0vw;
+}
+
+.ardava .small {
+	font-size: 1.4vw;
+}
+
+
+.artab-div thead {
+	position: sticky;
+	/* Фиксируем заголовок */
+	top: 0;
+	z-index: 1;
+	/* Для поднятия над содержимым */
+
+	outline: 1px solid gray;
+}
+
+.artab-div thead tr {
+	position: sticky;
+	/* Фиксируем заголовок */
+	top: 0;
+	ay;
+}
+
+.artab-div thead {
+	position: sticky;
+	/* Фиксируем заголовок */
+	top: 0;
+	z-index: 1;
+	/* Для поднятия над содержимым */
+
+	outline: 1px solid gray;
+
+	.artab-div thead tr {
+		z-index: 1;
+		/* Для поднятия над содержимым */
+
+		outline: 1px solid gray;
+
+		/* ??
+		.artab-div thead tr {
+			ay;
+		} */
+	}
+
+	.ardava,
+	.artab-div thead {
+		position: sticky;
+		/* Фиксируем заголовок */
+		top: 0;
+		z-index: 1;
+		/* Для поднятия над содержимым */
+
+		outline: 1px solid gray;
+	}
+
+
+	.ardava thead tr,
+	.artab-div thead tr {
+		padding-left: 1vw;
+		overflow-x: auto;
+		margin-left: 1.3vw;
+		margin-top: 1vw;
+		margin-bottom: 1vw;
+		border-bottom: 1px solid gray;
+		border-top: 1px solid black;
+		border-left: 1px solid lightgr1.8vw outline: 2px solid black;
+		border: 2px solid blue;
+	}
+
+	.ardava thead tr th,
+	.artab-div thead tr th {
+		outline: 2px solid black;
+		border: 2px solid blue;
+		margin-top: 2px;
+		padding-top: 2px;
+	}	

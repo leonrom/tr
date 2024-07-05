@@ -1,0 +1,526 @@
+#mytabi pre {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 666px;
+    border: 2px solid lightcyan;
+    opacity: 0;
+}
+
+#mytabi tr:nth-child(5n+1) {
+    /* заголовок*/
+    text-align: left;
+    font-size: 1.1vw;
+    text-align: right;
+    border: none;
+    line-height: 1.1vw;
+}
+
+#mytabi tr:nth-child(5n+1) td:first-child {
+    display: block;
+    height: 2px;
+    color: transparent;
+    border: none;
+}
+
+#mytabi.trans tr:nth-child(5n+1) td:first-child {
+    border: 2px solid red;
+    width: 1.8vw;
+    background-color: yellow;
+    display: inline-block;
+    border-radius: 0.6vw;
+    padding-top: 3px;
+    line-height: 0.8vw;
+    margin-top: 3px;
+    height: max-content;
+    color: black;
+}
+
+.mytabselect {
+    height: 2.5vw;
+    width: 100%;
+    padding: 0 0 1vw 1vw;
+}
+
+.mytabselect>p {
+    margin-bottom: 0;
+    margin-top: 0.5vw;
+}
+
+.mytabinum {
+    height: fit-content;
+    display: flex;
+    margin: 0 0 1vw 1vw;
+    background-color: paleturquoise;
+    width: max-content;
+    padding: 0.2vw 0.5vw 0.2vw 1.5vw;
+    border: 1px gray solid;
+    border-radius: 1vw;
+}
+
+.mytabinum>div {
+    border: 1px solid red;
+    width: 1.8vw;
+    background-color: transparent;
+    display: table-cell;
+    border-radius: 1vw;
+    padding-top: 3px;
+    line-height: 1.1vw;
+    margin-top: 3px;
+    height: 1.4vw;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 0 1vw 0 0;
+    font-size: 1.5vw;
+    color: green;
+}
+
+.mytabinum>div:nth-child(11) {
+    opacity: 0;
+    width: 1vw;
+}
+
+.mytabinum>div:nth-child(12) {
+    width: 3.5vw;
+    color: black;
+}
+
+.mytabinum>div.shown {
+    background-color: yellow;
+    color: black;
+    border: 1px red solid;
+}
+
+#mytabi tr:nth-child(5n+1) td::first-letter {
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+
+#mytabi tr:nth-child(5n+2) {
+    /* турецкий*/
+    text-align: left;
+    line-height: 1.4vw;
+    font-size: 1.4vw;
+    color: black;
+    font-weight: bold;
+    vertical-align: bottom;
+    background-color: cornsilk;
+    ;
+}
+
+#mytabi tr:nth-child(5n+2):hover {
+    background-color: orange;
+}
+
+#mytabi.trans tr:nth-child(5n+2):hover {
+    /* outline: 2px solid gray; */
+    cursor: pointer;
+}
+
+#mytabi tr:nth-child(5n+3) {
+    /* османский*/
+    text-align: center;
+    line-height: 1.6vw;
+    font-size: 1.175vw;
+    background-color: bisque;
+}
+
+#mytabi tr:nth-child(5n+3):hover {
+    cursor: default;
+    font-size: 1.75vw;
+    background-color: palegreen;
+}
+
+/* #mytabi.sound tr:nth-child(5n+3):hover {
+    cursor: pointer;
+} */
+
+/* #mytabi.sound tr:nth-child(5n+3):hover {
+    cursor: pointer;
+} */
+
+#mytabi.sound>div {
+    margin-top: 0vw;
+}
+/* 
+#mytabi.sound>div span {
+    display: none;
+} */
+
+#mytabi>p {
+    margin-bottom: 0;
+}
+
+/* .shwa>span{
+    display: none;
+}
+.sound .shwa {
+    display: none;
+}
+.sound>.shwa {
+    display: none;
+} */
+
+#mytabi tr:nth-child(5n+4) {
+    /* русский*/
+    text-align: left;
+    line-height: 1.2vw;
+    font-size: x-small;
+    background-color: bisque;
+}
+
+#mytabi tr:nth-child(5n+4):hover {
+    background-color: lightblue;
+    ;
+}
+
+#mytabi td {
+    border: 1px solid thistle;
+    /* min-width: 2.4vw; */
+    padding: 0 0.3vw 0 0.3vw;
+    white-space: nowrap;
+}
+
+#mytabi tr:nth-child(5n+5) td {
+    /* вставка справки*/
+    display: none;
+    border: 1px solid gray;
+    padding-left: 0.2vw;
+}
+
+#mytabi tr:nth-child(5n+2) td:nth-child(18),
+#mytabi tr:nth-child(5n+2) td:nth-child(17),
+#mytabi tr:nth-child(5n+2) td:nth-child(9) {
+    min-width: 1.5vw;
+    font-size: 0.8vw;
+    /* border: 0; */
+    vertical-align: super;
+}
+
+#mytabi.trans td:nth-child(18),
+#mytabi.trans td:nth-child(17) {
+    display: none;
+}
+
+#mytabi.trans tr:nth-child(5n+2) td:nth-child(9) {
+    color: transparent;
+}
+
+#mytabi tr:nth-child(5n+2) td:not(:nth-child(17)):not(:nth-child(18)),
+#mytabi tr:nth-child(5n+3) td {
+    /* турецкий*/
+    border-top: 1px solid chocolate;
+}
+
+#mytabi tr:not(:nth-child(5n+1)) td:nth-child(1) {
+    /* турецкий*/
+    border-left: 1px solid chocolate;
+}
+
+#mytabi tr:not(:nth-child(5n+1)) td:nth-child(16) {
+    /* турецкий*/
+    border-right: 1px solid chocolate;
+}
+
+#mytabi tr:nth-child(5n+3) td {
+    /* османский*/
+    border-right-width: 1px;
+    border-right-color: grey;
+    border-bottom-color: grey;
+}
+
+#mytabi tr:nth-child(5n+4) td {
+    /* русский*/
+    border-right-width: 1px;
+    border-left-color: grey;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    padding-left: 3px;
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+#mytabi tr:nth-child(5n+4) td:last-child {
+    /* русский*/
+    border-right: 1px solid black;
+}
+
+#mytabi tr:nth-child(5n+4) td:hover:not(.cellD_2) {
+    /* outline: 1px solid gray; */
+    cursor: pointer;
+    background-color: yellow;
+}
+
+#mytabi tr:nth-child(5n+2) td:nth-child(even):not(td:last-child):not(td:nth-child(16)) {
+    /* турецкий*/    
+    border-right-width: 2px;
+    border-right-color: grey;
+    border-right-style: groove;
+}
+
+.inkst {
+    /* background-color: navy; */
+    margin: 0 0 6px 0;
+    padding-bottom: 4px;
+    height: 80%;
+    border: chocolate solid 1px;
+    width: 90%;
+}
+
+#mytabi .olga5-cart {
+    cursor: default;
+    overflow: visible !important;
+}
+
+b,
+p {
+    direction: ltr;
+    margin-bottom: 0.1em;
+}
+ol li{
+    margin-bottom: 0.6em;
+}
+
+span.olga5_snd {
+    font-size: 1.42vw;
+    font-weight: bold;
+    margin-left: 1vw;
+
+    border-radius: 1.4vw;
+    padding-left: 0.3vw;
+    padding-bottom: 0;
+    padding-right: 0.35vw;
+    padding-top: 0.2vw;
+}
+
+/* .mpop ul {                       уже не используется
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    padding-inline-start: 1.5em;
+}
+
+.mpop h4 {
+    display: flex;
+    width: max-content;
+    background-color: aqua;
+    float: right;
+    position: sticky;
+    top: 3vw;
+    margin-right: 2vw;
+} */
+
+table.olga5_shp {
+    background: white;
+}
+
+.cpops {
+    background-color: red;
+    margin: 0;
+    background: lightgreen;
+    opacity: 01;
+    position: fixed;
+
+    overflow: visible;
+    outline-width: 0px;
+    outline-color: red;
+    outline-style: dashed;
+
+    background: lightcyan;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 4px;
+
+    /* direction: rtl; */
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+ }
+
+.cpops>div {
+    direction: rtl;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    width: 100%;
+    background-color: paleturquoise;
+    font-size: 1em;
+    /* padding: 2px 4px 2px 3px; */
+}
+
+
+.cpops>div>div {
+    direction: ltr;
+}
+
+.cpops h4 {
+    direction: ltr;
+    display: flex;
+    width: max-content;
+    background-color: yellow;
+    float: left;
+    /* font-size: 1.1vw; */
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 1px solid gray;
+    margin: 0;
+    margin-top: -14px;
+    margin-right: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 0.7em;
+}
+
+.cnum {
+    background-color: white;
+    overflow-x: visible;
+    margin-left: 0.5vw !important;
+    /* margin-top: 0.5vw; */
+    direction: ltr;
+}
+
+.cnum>span {
+    position: absolute;
+    margin-top: -0.3vw;
+    margin-left: -0.4vw;
+    color: red;
+    background-color: yellow;
+    outline: 0.2vw red solid;
+    border-radius: 50%;
+    font-weight: 900;
+    font-family: monospace;
+    line-height: 1.1vw;
+    width: 1vw;
+    height: 1vw;
+    text-align: center;
+    color: black;
+}
+
+.cnum>table,
+.cnum {
+    border-spacing: 0px;
+    /* width: 959px; */
+    width: 77vw;
+}
+
+#mytabi .cnum>span:hover {
+    outline: 0.3vw solid gray;
+}
+
+/* 
+.olga5-cart {
+    overflow: visible !important;
+} */
+
+/* .schwa-sound {
+    width: fit-content;
+    background-color: antiquewhite;
+    border: 1px solid red;
+    overflow: auto;
+    direction: rtl;
+    height: 33vw;
+    padding-left: 0.1vw;
+} */
+
+.schwa {
+    direction: ltr;
+    display: none;
+}
+
+.schwa.shown {
+    display: block;
+}
+
+
+.schwa.sound {
+    margin-top: 1.25vw;
+    margin-bottom: 0.62vw;
+}
+
+.schwa hr {
+    display: none;
+}
+.moeexpl {
+    background-color: paleturquoise;
+    width: 77vw;
+    margin-left: 0.5vw !important;
+    font-family: serif;
+}
+
+.trans .schwa hr {
+    border: 1px inset red;
+    margin-left: -11px;
+    margin: 0.5em -2px 0.1em 0em;
+    display: block;
+    width: 90%;
+}
+
+.trans .schwa hr.hr-hidden {
+    display: none;
+}
+
+.div-ol {
+    display: none;
+}
+
+#mytabi tr:nth-child(5n+5) {
+    background-color: bisque;
+}
+
+/* #mytabi tr:nth-child(5n+5)>td>div {
+    background-color: red;
+} */
+
+#mytabi tr:nth-child(5n+5)>td>div {
+    direction: rtl;
+    height: 23vw;
+    overflow: auto;
+    border-bottom: 0.33vw dashed transparent;
+    border-top: 0.33vw dashed transparent;
+}
+
+tr:nth-child(5n+5)>td>div>ol {
+    direction: ltr;
+    /* border: 1px solid lightgrey; */
+    background-color: linen;
+    padding-left: 0.5vw;
+    overflow: auto;
+    font-size: 1.251vw;
+    margin-top: 0.5vw;
+    margin-left: 0.6em;
+    white-space: normal;
+    padding: 0 0 0 3.5vw;
+    /* margin: 0 0px 0 1vw;
+    width: 67vw; */
+    /* border-left: 1px solid lightgrey; */
+}
+
+tr:nth-child(5n+5)>td>div>ol>li>ul {
+    list-style-type: square;
+}
+
+tr:nth-child(5n+5)>td>div>ol>li>ul>li>ul {
+    list-style-type: disc;
+}
+
+tr:nth-child(5n+5)>td>div>ol>li>ul>li>ul>li>ul {
+    list-style-type: circle;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 1.5vw;
+}
+
+sub {
+    vertical-align: middle;
+    font-size: 1.1vw;
+    line-height: 0.51em;
+}
+
+#hiddendiv {
+    left: 0;
+    top: 0;
+    width: 0;
+    height: fit-content;
+    position: fixed,
+}
