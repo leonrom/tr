@@ -1,13 +1,58 @@
-<h1>Османский языык</h1>
-<ul>
-    <li><a href="./blog/a-arabic.html">Арабский алфавит</a></li>
-    <li><a href="./blog/a-osman.html">Османский алфавит</a></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Osman</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 99vh;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            margin-left: 2.8em;
+        }
+
+        div {
+            height: 100%;
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-grow: 1;
+        }
+
+        iframe {
+            height: 100%;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a target="myframe" href="./blog/a-arabic.html">Арабский алфавит</a></li>
+        <li><a target="myframe" href="./blog/a-osman.html">Османский алфавит</a></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <div>
+        <iframe src="./blog/a-arabic.html" name="myframe" title="Встроенная страница" style="
+    border: none;
+">
+    </div>
+</body>
