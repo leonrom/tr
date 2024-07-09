@@ -1,0 +1,29 @@
+/**
+ * установка-отмена классы который подключается перед и после инициализации страницы
+ * (ну и подгружает требуемые CSS'ы)
+ *
+ **/
+
+.olga5_isLoading {
+    opacity: 0.0;
+    cursor: wait;
+    animation: olga5_isLoading_animate 1.6s infinite linear;
+}
+
+@media (max-width: 2000px) {
+    body {font-size: large;}
+}
+
+@media (max-width: 1000px) {
+    body {font-size: medium;}
+}
+
+@media (max-width: 500px) {
+    body {font-size: small;}
+}
+
+@keyframes olga5_isLoading_animate {
+    100%,0% {opacity: 0.6;}
+    75%, 25% {opacity: 0.3;}
+    50% {opacity: 0.1;}
+}
